@@ -23,6 +23,7 @@ const routes: Routes = [
     children: [
       {path: 'members', component: MemberListComponent, canActivate: [AuthGuard]},
       {path: 'members/:id', component: MemberDetailComponent},
+      {path: 'lists', component: ListsComponent},
       {path: 'myskills', component: MyskillsComponent},
       {path: 'myclasses', component: MyclassesComponent},
       {path: 'myresults', component: MyresultsComponent},

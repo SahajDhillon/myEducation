@@ -2,8 +2,8 @@
     <div class="container">
         <a class="navbar-brand" routerLink='/' routerLinkActive='active'>myEducation</a>
     
-      <ul class="navbar-nav mr-auto" *ngIf="accountService.currentUser$ | async">
-        <ng-container>
+      <ul class="navbar-nav mr-auto">
+        <ng-container *ngIf="accountService.currentUser$ | async">
           <li class="nav-item">
             <a class="nav-link" routerLink='/myskills' routerLinkActive='active'>mySkills </a>
           </li>
