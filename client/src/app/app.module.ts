@@ -14,6 +14,12 @@ import { MemberListComponent } from './member-list/member-list.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
+import { MyskillsComponent } from './myskills/myskills.component';
+import { MyclassesComponent } from './myclasses/myclasses.component';
+import { MyattendenceComponent } from './myattendence/myattendence.component';
+import { MyresultsComponent } from './myresults/myresults.component';
+import {ToastrModule} from 'ngx-toastr';
+import { SharedModule } from './_modules/shared.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +30,11 @@ import { MessagesComponent } from './messages/messages.component';
     MemberListComponent,
     MemberDetailComponent,
     ListsComponent,
-    MessagesComponent
+    MessagesComponent,
+    MyskillsComponent,
+    MyclassesComponent,
+    MyattendenceComponent,
+    MyresultsComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +42,7 @@ import { MessagesComponent } from './messages/messages.component';
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
-    BsDropdownModule.forRoot()
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
